@@ -1,14 +1,13 @@
 var newestUrls = [
-    "https://dashijian1.com",
-    "http://dashijian2.com"
+    "https://dashijian1.com"
 ];
 
 var otherUrls = [
-    "https://github.com/dnynews",
-    "https://gitlab.com/dnynews"
+    "https://github.com/dnynews26",
+    "https://gitlab.com/dnynews26"
 ];
 
-var emails = ["dnynews2026@gmail.com"];
+var emails = ["dnynews26@gmail.com"];
 
 var tgChannel = "https://t.me/dnynew2026";
 
