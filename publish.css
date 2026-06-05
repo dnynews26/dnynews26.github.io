@@ -1,0 +1,118 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+body {
+    background: #0a0a0a;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.8;
+    padding: 30px 15px;
+    min-height: 100vh;
+}
+
+#main { max-width: 700px; margin: 0 auto; }
+
+.field {
+    background: #111111;
+    border: 1px solid #ffcc00;
+    border-radius: 18px;
+    padding: 24px 28px;
+    margin: 18px 0;
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.field:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(255, 204, 0, 0.35);
+    border-color: #ffd700;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffcc00;
+    margin-bottom: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px rgba(255, 204, 0, 0.6);
+}
+
+/* 网址突出展示 */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 14px 0;
+    text-align: center;
+    font-size: 17.5px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    word-break: break-all;
+}
+
+ul li a {
+    color: #ffeb99;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+ul li a:hover {
+    color: #ffffff;
+    background: rgba(255, 204, 0, 0.15);
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+/* Logo 区域 */
+.brand {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.brand img {
+    width: 300px;                  /* Logo 再次放大 */
+    filter: drop-shadow(0 8px 25px rgba(255, 204, 0, 0.7));
+}
+
+.brand h1 {
+    font-size: 42px;
+    margin: 12px 0 6px;
+    color: #ffcc00;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px #ffcc00;
+}
+
+.brand p {
+    color: #ffd700;
+    font-size: 19px;
+    letter-spacing: 3px;
+}
+
+/* 描述卡片 - 重点修改：全部文字居中 */
+.field.desc {
+    background: #1a1a1a;
+    border-color: #cc9900;
+}
+
+.field.desc .text,
+.field.desc ul li {
+    text-align: center !important;     /* 强制居中 */
+    color: #e0d0aa;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* TG 链接 */
+ul li a[href*="t.me"] {
+    color: #00ccff;
+}
+
+/* 移动端 */
+@media (max-width: 600px) {
+    .brand img { width: 220px; }
+    .brand h1 { font-size: 36px; }
+    .field { padding: 20px 22px; }
+    .title { font-size: 20px; }
+}
